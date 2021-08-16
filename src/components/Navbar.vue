@@ -1,42 +1,55 @@
 <template>
   <div class="navbar">
     <div class="top-navbar-container">
-        <div class="top-navbar">
- <div class="left-nav">
-        <img src="../assets/chat.png" alt="" />
-      </div>
-      <div class="right-nav">
-        <router-link to="" class="nav-links animated-links links">About</router-link>
-        <router-link to="" class="nav-links animated-links  links">Work</router-link>
-        <router-link to="" class="nav-links animated-links  links">Blog</router-link>
-        <router-link to="" class="nav-links animated-links  links">Contact</router-link>
-      </div>
+      <div class="top-navbar">
+        <div class="left-nav">
+          <router-link to="/">
+            <img src="../assets/chat.png" alt="" />
+          </router-link>
         </div>
-     
+        <div class="right-nav">
+          <router-link to="/about" class="nav-links animated-links links"
+            >About</router-link
+          >
+          <router-link to="/works" class="nav-links animated-links  links"
+            >Work</router-link
+          >
+          <router-link to="/blog" class="nav-links animated-links  links"
+            >Blog</router-link
+          >
+          <router-link to="/contact" class="nav-links animated-links  links"
+            >Contact</router-link
+          >
+        </div>
+      </div>
     </div>
     <div class="bottom">
-          <transition name="fade">
-      <div class="overlay" v-if="burgerToggle">
-        <div class="bottom-links">
-          <div>
-            <router-link to="" class="bottom-nav-links links"
-              >About</router-link
-            >
-          </div>
-          <div>
-            <router-link to="" class="bottom-nav-links links">Work</router-link>
-          </div>
-          <div>
-            <router-link to="" class="bottom-nav-links links">Blog</router-link>
-          </div>
-          <div>
-            <router-link to="" class="bottom-nav-links links"
-              >Contact</router-link
-            >
+      <transition name="fade">
+        <div class="overlay" v-if="burgerToggle">
+          <div class="bottom-links">
+            <div>
+              <router-link to="" class="bottom-nav-links links"
+                >About</router-link
+              >
+            </div>
+            <div>
+              <router-link to="" class="bottom-nav-links links"
+                >Work</router-link
+              >
+            </div>
+            <div>
+              <router-link to="" class="bottom-nav-links links"
+                >Blog</router-link
+              >
+            </div>
+            <div>
+              <router-link to="" class="bottom-nav-links links"
+                >Contact</router-link
+              >
+            </div>
           </div>
         </div>
-      </div>
-          </transition>
+      </transition>
       <div class="bottom-navbar">
         <div class="left-nav">
           <img src="../assets/chat.png" alt="" class="cat-img" />
@@ -68,15 +81,15 @@ export default {
 .navbar {
   position: relative;
 }
-.top-navbar-container{
-    width:100%;
-    display:flex;
-    justify-content: center;
+.top-navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .top-navbar {
-    background-color:#FAFAFA;
-    max-width: 1400px;
-    width:100%;
+  background-color: #fafafa;
+  max-width: 1400px;
+  width: 100%;
   display: flex;
   padding: 20px;
   justify-content: space-between;
@@ -133,7 +146,7 @@ export default {
   }
   .bottom-navbar {
     box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.1);
-    background-color:#FAFAFA;
+    background-color: #fafafa;
 
     display: flex;
     justify-content: space-between;

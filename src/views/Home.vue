@@ -16,8 +16,8 @@
     <div class="see-more-link">
       <router-link to="" class="links  animated-links">See more</router-link>
     </div>
-        <h2>A word from my friends and team mates ❤️</h2>
-
+    <h2>A word from my friends and team mates ❤️</h2>
+    <Testimonials/>
   </div>
 </template>
 
@@ -25,12 +25,14 @@
 // @ is an alias to /src
 import Presentation from "../components/Presentation.vue";
 import Project from "../components/Project.vue";
+import Testimonials from "../components/Testimonials.vue";
 
 export default {
   name: "Home",
   components: {
     Presentation,
     Project,
+    Testimonials,
   },
   data() {
     return {
@@ -81,12 +83,12 @@ h2 {
 }
 
 .see-more-link {
-  height:25px;
+  height: 25px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right:20px;
-  color:black;
+  padding-right: 20px;
+  color: black;
   font-weight: 400;
 }
 @media (max-width: 1024px) {
