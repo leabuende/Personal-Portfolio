@@ -6,7 +6,7 @@
       <div class="column" v-for="(project, i) in projects" :key="i">
         <Project
           class="project-card"
-          :image="require(`@/assets/projects/monordo/${project.img}`)"
+          :image="require(`@/assets/projects/${project.link}/${project.img}`)"
           :name="project.name"
           :description="project.description"
           :skills="project.skills"
@@ -46,11 +46,11 @@ export default {
           link: "monordo",
         },
         {
-          name: "Project Number Two",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          link: "monordo",
+          name: "24 Days of Javascriptmas",
+          description: "Solving problems in Javascript every day unyil Christmas, and filming my solutions explained",
+          skills: ["Development"],
+          img: "project-card.jpeg",
+          link: "javascriptmas",
         },
         {
           name: "Project Number Two",

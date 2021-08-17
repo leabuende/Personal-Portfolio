@@ -4,7 +4,7 @@
       <img :src="image" alt="" />
       <div class="img-overlay">
         <div class="skills">
-          <p v-for="skill in skills" :key="skill">{{ skill }} /</p>
+          <p v-for="skill in skills" :key="skill">{{ skill }} </p>
         </div>
         <h1>{{ name }}</h1>
         <p class="description">{{ description }}</p>

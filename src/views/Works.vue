@@ -54,6 +54,14 @@ export default {
           tags: ["design", "code"],
           link: "monordo",
         },
+        {
+          name: "24 Days of Javascriptmas",
+          description: "Solving problems in Javascript every day unyil Christmas, and filming my solutions explained",
+          skills: ["Development"],
+          img: "project-card.jpeg",
+          tags: ["design"],
+          link: "javascriptmas",
+        },
       ],
     };
   },

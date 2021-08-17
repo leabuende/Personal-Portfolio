@@ -48,10 +48,23 @@
           </div>
           <div class="info-text">{{ getProject().infobox.time }}</div>
         </div>
+        <div class="info-separator"></div>
+
+        <div class="info-line">
+          <div class="info-title" v-if="getProject().infobox.links">
+            Links
+          </div>
+          <div class="info-text ">
+              <a class="links animated-links" :href="link.link" target="_blank" v-for="(link,i) in getProject().infobox.links" :key="i">
+                  {{link.name}}
+              </a>
+
+          </div>
+        </div>
       </div>
     </div>
     <div class="section">
-      <p class="section-content">{{ getProject().paragraph }}</p>
+      <div class="section-content" v-html="getProject().paragraph"></div>
     </div>
     <div class="section">
       <carousel :perPage="1" class=" section-content">
@@ -73,7 +86,7 @@
     <div class="section">
       <div class="section-content lesson-box">
         <h2>What I learned from this project</h2>
-        <p>{{ getProject().lesson }}</p>
+        <p v-html="getProject().lesson"></p>
       </div>
     </div>
   </div>
@@ -106,17 +119,50 @@ export default {
             mission:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
             time: "3 weeks",
-            links: {
-              github: "",
-              website: "",
-              figma: "",
-            },
+            links: [
+                {
+                    name:"Github",
+                    link:"www.github.com"
+                }
+            ]
           },
           paragraph:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
           pictures: ["album/project-card.png", "album/project-card.png"],
           lesson:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
+        },
+        {
+          url: "javascriptmas",
+          title: "24 Days of Javascriptmas",
+          description:
+            "Solving problems in Javascript every day unyil Christmas, and filming my solutions explained",
+          thumbnail: "project-card.jpeg",
+          infobox: {
+            skills:
+              "Vanilla JS, synthesize explanations and editing fast-paced videos",
+            context:
+              "December 2020, Scrumba released a 24 Days of Javascriptmas challenge.",
+            mission:
+              "Solving the exercices, and editing clear and understandable explanation videos",
+            time: "24 Days (and not one more)",
+            links: [
+                {
+                    name:"Instagram",
+                    link:"https://www.instagram.com/lea.buende/channel/"
+                },
+                {
+                    name:"Linkedin",
+                    link:"https://www.linkedin.com/posts/l%C3%A9a-buend%C3%A9-65b440174_il-y-a-14-jours-je-me-suis-lanc%C3%A9-un-nouveau-activity-6744175097650663424-W6Au"
+                },
+
+            ]
+          },
+          paragraph:
+            "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+          pictures: ["album/1.png", "album/2.png"],
+          lesson:
+            "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
         },
       ],
     };
@@ -192,7 +238,7 @@ export default {
 
 .carousel {
   padding: 10px;
-  height: 300px;
+  height: 500px;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -208,6 +254,17 @@ export default {
   padding: 15px;
   width: 100%;
 }
+.lesson-box p{
+    margin-top:16px;
+}
+.links{
+    font-style: italic;
+        font-weight: bold;
+        font-family: roboto;
+
+    margin-right: 10px;
+}
+
 @media (max-width: 1200px) {
   .column {
     flex: 50%;
@@ -222,6 +279,7 @@ export default {
   .carousel img {
     width: 100%;
     object-fit: cover;
+    height: 300px;
   }
 }
 </style>
