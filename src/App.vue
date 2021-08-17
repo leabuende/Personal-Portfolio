@@ -44,6 +44,9 @@ min-height:100vh;
 .links:hover{
   cursor: pointer;
 }
+a:hover{
+  cursor: pointer;
+}
 *{
   margin:0;
   box-sizing: border-box;
@@ -60,6 +63,7 @@ min-height:100vh;
   background-color: black;
   border: 1px solid white;
   color:white;
+  cursor: pointer;
 }
 
 h2{
