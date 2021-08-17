@@ -3,13 +3,14 @@
     <Presentation />
     <h2>My latest projects</h2>
     <div class="container">
-      <div class="column" v-for="project in projects" :key="project.name">
+      <div class="column" v-for="(project,i) in projects" :key="i">
         <Project
           class="project-card"
           :image="require(`@/assets/projects/monordo/${project.img}`)"
           :name="project.name"
           :description="project.description"
           :skills="project.skills"
+          :link="project.link"
         />
       </div>
     </div>
@@ -17,7 +18,7 @@
       <router-link to="" class="links  animated-links">See more</router-link>
     </div>
     <h2>A word from my friends and team mates ❤️</h2>
-    <Testimonials/>
+    <Testimonials />
   </div>
 </template>
 
@@ -42,18 +43,21 @@ export default {
           description: "A wonderfully unique project, very fun to do",
           skills: ["Development", "UX/UI Design"],
           img: "project-card.png",
+          link: "monordo",
         },
         {
           name: "Project Number Two",
           description: "A wonderfully unique project, very fun to do",
           skills: ["Development", "UX/UI Design"],
           img: "project-card.png",
+          link: "monordo",
         },
         {
           name: "Project Number Two",
           description: "A wonderfully unique project, very fun to do",
           skills: ["Development", "UX/UI Design"],
           img: "project-card.png",
+          link: "monordo",
         },
       ],
     };

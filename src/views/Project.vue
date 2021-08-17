@@ -196,12 +196,13 @@ flex-wrap: wrap;
     height:300px;
         display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .carousel img{
     height:100%;
     width:auto;
-
-}
+ 
+  }
 .lesson-box {
   background-color: white;
   border-radius: 5px;
@@ -219,6 +220,11 @@ flex-wrap: wrap;
   .info-title, .info-text {
     flex: 100%;
   }
+  .carousel img{
+      width:100%;
+  object-fit: cover;
+  }
+
 
 }
 </style>
