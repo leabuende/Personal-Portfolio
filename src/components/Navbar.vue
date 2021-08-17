@@ -57,7 +57,7 @@
       </transition>
       <div class="bottom-navbar">
         <div class="left-nav">
-        <router-link to="/">
+        <router-link to="/" class="cat-img-contain">
    <img src="../assets/chat.png" alt="" class="cat-img" />
         </router-link>
                  <p class="name">Léa Buendé</p>
@@ -158,7 +158,7 @@ export default {
 
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
   }
   .bottom-navbar .left-nav {
     display: flex;
@@ -173,10 +173,16 @@ export default {
     vertical-align: middle;
     font-weight: bold;
   }
+  .bottom-navbar .name, .cat-img-contain{
+          line-height:55px;
+
+  }
   .bottom-navbar .cat-img {
     height: 40px;
+    vertical-align: middle;
   }
   .burger-menu {
+      margin-top:10px;
     height: 31px;
     width: 35px;
     vertical-align: middle;
