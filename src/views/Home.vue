@@ -82,6 +82,8 @@ h2 {
   justify-content: center;
 }
 .project-card {
+      min-height:315px;
+
   max-height: 350px;
   overflow: hidden;
 }
