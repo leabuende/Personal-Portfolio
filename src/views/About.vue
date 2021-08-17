@@ -3,6 +3,11 @@
     <div class="presentation-section">
       <div class="presentation-left">
         <Presentation />
+        <a href="https://drive.google.com/file/d/1NsO7pEXPJZxEyiOfPLi5W5VlsrXdr7Y9/view?usp=sharing" target="_blank">
+        <button class="white-button">
+          Download my resume
+        </button>
+        </a>
       </div>
       <div class="about-slider about-desktop">
 
@@ -154,14 +159,7 @@
     </div>
   
 
-    <a
-      data-pin-do="embedUser"
-      data-pin-lang="fr"
-      data-pin-board-width="400"
-      data-pin-scale-height="240"
-      data-pin-scale-width="80"
-      href="https://www.pinterest.fr/ecquimod/"
-    ></a>
+
   </div>
 </template>
 
@@ -300,6 +298,9 @@ export default {
   width: 100%;
       flex:50%;
 
+}
+.presentation-left button{
+  margin-top:16px;
 }
 .about-slider {
   width: 100%;

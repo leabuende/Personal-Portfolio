@@ -6,15 +6,15 @@
 passionate about creating beautiful things. ❤️
 </p>
 <div class="social-links">
-    <a href="">
+    <a href="https://github.com/leabuende" target="_blank">
     <img src="../assets/links/github.png" alt="">
 
     </a>
-    <a href="">
+    <a href="https://www.linkedin.com/in/l%C3%A9a-buend%C3%A9-65b440174/" target="_blank">
         <img src="../assets/links/linkedin.png" alt="">
 
     </a>
-    <a href="">
+    <a href="mailto:lea.buende@gmail.com?subject=Let's keep in touch ! - Léa Buendé" target="_blank">
     <img src="../assets/links/mail.png" alt="">
 
     </a>

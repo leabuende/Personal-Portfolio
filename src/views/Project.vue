@@ -12,11 +12,10 @@
           alt=""
         />
         <div class="overlay">
-        <div class="overlay-text">
-  <h1>{{getProject().title }}</h1>
-          <p>{{ getProject().description }}</p>
-        </div>
-        
+          <div class="overlay-text">
+            <h1>{{ getProject().title }}</h1>
+            <p>{{ getProject().description }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -55,20 +54,20 @@
       <p class="section-content">{{ getProject().paragraph }}</p>
     </div>
     <div class="section">
-            <carousel :perPage="1" class=" section-content">
-        <slide v-for="(image,i) in getProject().pictures" :key='i' class="carousel">
-            <img
-          :src="
-            require('@/assets/projects/' +
-              getProject().url +
-              '/' +
-              image)
-          "
-          alt=""
-        />
-
+      <carousel :perPage="1" class=" section-content">
+        <slide
+          v-for="(image, i) in getProject().pictures"
+          :key="i"
+          class="carousel"
+        >
+          <img
+            :src="
+              require('@/assets/projects/' + getProject().url + '/' + image)
+            "
+            alt=""
+          />
         </slide>
-    </carousel>
+      </carousel>
     </div>
 
     <div class="section">
@@ -85,13 +84,13 @@ import { Carousel, Slide } from "vue-carousel";
 
 export default {
   name: "Project",
-   components: {
+  components: {
     Carousel,
     Slide,
   },
   data() {
     return {
-    selectedProject:{},
+      selectedProject: {},
       projects: [
         {
           url: "monordo",
@@ -115,7 +114,7 @@ export default {
           },
           paragraph:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
-          pictures: ["album/project-card.png","album/project-card.png"],
+          pictures: ["album/project-card.png", "album/project-card.png"],
           lesson:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
         },
@@ -130,9 +129,9 @@ export default {
         "background-size": "cover",
       };
     },
-    getProject(){
-        return this.projects.find(x=>x.url==this.$route.params.name)
-    }
+    getProject() {
+      return this.projects.find((x) => x.url == this.$route.params.name);
+    },
   },
 };
 </script>
@@ -146,13 +145,13 @@ export default {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-top:0;
+  top: 0;
 }
-.overlay-text{
-    position: absolute;
-    bottom:0;
-    color:white;
-    margin:15px;
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin: 15px;
 }
 .thumbnail-img {
   width: 100vw;
@@ -163,13 +162,13 @@ top:0;
 }
 .thumbnail-img img {
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: cover;
 }
 .info-line {
   display: flex;
-flex-wrap: wrap;
-  margin:5px 0px 5px 0px;
+  flex-wrap: wrap;
+  margin: 5px 0px 5px 0px;
 }
 .section-content {
   max-width: 950px;
@@ -191,18 +190,17 @@ flex-wrap: wrap;
   margin-bottom: 32px;
 }
 
-.carousel{
-    padding:10px;
-    height:300px;
-        display: flex;
-    justify-content: center;
-    overflow: hidden;
+.carousel {
+  padding: 10px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
-.carousel img{
-    height:100%;
-    width:auto;
- 
-  }
+.carousel img {
+  height: 100%;
+  width: auto;
+}
 .lesson-box {
   background-color: white;
   border-radius: 5px;
@@ -217,14 +215,13 @@ flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
-  .info-title, .info-text {
+  .info-title,
+  .info-text {
     flex: 100%;
   }
-  .carousel img{
-      width:100%;
-  object-fit: cover;
+  .carousel img {
+    width: 100%;
+    object-fit: cover;
   }
-
-
 }
 </style>

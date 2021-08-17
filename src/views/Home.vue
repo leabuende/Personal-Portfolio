@@ -3,7 +3,7 @@
     <Presentation />
     <h2>My latest projects</h2>
     <div class="container">
-      <div class="column" v-for="(project,i) in projects" :key="i">
+      <div class="column" v-for="(project, i) in projects" :key="i">
         <Project
           class="project-card"
           :image="require(`@/assets/projects/monordo/${project.img}`)"

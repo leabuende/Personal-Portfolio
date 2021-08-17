@@ -10,22 +10,22 @@
       <h2 class="category-filter" @click="filterProjects('extra')">
         Extra
       </h2>
-       <h2 class="category-filter" @click="filterProjects('all')">
+      <h2 class="category-filter" @click="filterProjects('all')">
         All
       </h2>
     </div>
-      <div class="container">
-        <div class="column" v-for="(project,i) in selectedProjects" :key="i">
-          <Project
-            class="project-card"
-            :image="require(`@/assets/projects/${project.link}/${project.img}`)"
-            :name="project.name"
-            :description="project.description"
-            :skills="project.skills"
-            :link="project.link"
-          />
-        </div>
+    <div class="container">
+      <div class="column" v-for="(project, i) in selectedProjects" :key="i">
+        <Project
+          class="project-card"
+          :image="require(`@/assets/projects/${project.link}/${project.img}`)"
+          :name="project.name"
+          :description="project.description"
+          :skills="project.skills"
+          :link="project.link"
+        />
       </div>
+    </div>
     <h2>A word from my friends and team mates ❤️</h2>
     <Testimonials />
   </div>
@@ -43,8 +43,8 @@ export default {
   },
   data() {
     return {
-    toggleFilter:false,
-    selectedProjects:"",
+      toggleFilter: false,
+      selectedProjects: "",
       projects: [
         {
           name: "Project Number One",
@@ -52,28 +52,27 @@ export default {
           skills: ["Development", "UX/UI Design"],
           img: "project-card.png",
           tags: ["design", "code"],
-          link: "monordo"
+          link: "monordo",
         },
       ],
     };
   },
-  created(){
-    this.selectedProjects=this.projects;
+  created() {
+    this.selectedProjects = this.projects;
   },
-  methods:{
-      filterProjects(category){
-          this.selectedProjects=[]
-          this.projects.forEach(e=>{
-              if(e.tags.includes(category)){
-                this.selectedProjects.push(e)
-              }
-          })
-          if(category=='all'){
-              this.selectedProjects=this.projects;
-          }
-      },
-     
-  }
+  methods: {
+    filterProjects(category) {
+      this.selectedProjects = [];
+      this.projects.forEach((e) => {
+        if (e.tags.includes(category)) {
+          this.selectedProjects.push(e);
+        }
+      });
+      if (category == "all") {
+        this.selectedProjects = this.projects;
+      }
+    },
+  },
 };
 </script>
 <style scoped>
@@ -126,8 +125,9 @@ export default {
   overflow: hidden;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
@@ -144,7 +144,7 @@ export default {
     max-width: 100%;
   }
   .category-filter {
-      font-size:16px;
+    font-size: 16px;
   }
 }
 </style>
