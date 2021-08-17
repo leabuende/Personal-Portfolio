@@ -3,8 +3,8 @@
     <carousel :perPage="1">
       <slide
         class="slide"
-        v-for="testimonial in testimonials"
-        :key="testimonial.name"
+        v-for="(testimonial,i) in testimonials"
+        :key="i"
       >
         <img
           :src="require(`@/assets/profiles/${testimonial.img}`)"

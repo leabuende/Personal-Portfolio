@@ -32,7 +32,7 @@ export default {
 </script>
 <style  scoped>
 .presentation{
-    width:50%;
+    width:100%;
     max-width: 500px;
 }
 .profile-img{

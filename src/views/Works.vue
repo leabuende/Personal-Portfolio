@@ -15,13 +15,14 @@
       </h2>
     </div>
       <div class="container">
-        <div class="column" v-for="project in selectedProjects" :key="project.name">
+        <div class="column" v-for="(project,i) in selectedProjects" :key="i">
           <Project
             class="project-card"
-            :image="require(`@/assets/projects/monordo/${project.img}`)"
+            :image="require(`@/assets/projects/${project.link}/${project.img}`)"
             :name="project.name"
             :description="project.description"
             :skills="project.skills"
+            :link="project.link"
           />
         </div>
       </div>
@@ -51,48 +52,7 @@ export default {
           skills: ["Development", "UX/UI Design"],
           img: "project-card.png",
           tags: ["design", "code"],
-        },
-        {
-          name: "Project Number Two",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          tags: ["design"],
-        },
-        {
-          name: "Project Number Three",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          tags: ["code"],
-        },
-        {
-          name: "Project Number Four",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          tags: ["design", "code"],
-        },
-        {
-          name: "Project Number Five",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          tags: ["design", "extra"],
-        },
-        {
-          name: "Project Number Six",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          tags: ["extra", "code"],
-        },
-        {
-          name: "Project Number Seven",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          tags: ["extra"],
+          link: "monordo"
         },
       ],
     };
@@ -111,7 +71,6 @@ export default {
           if(category=='all'){
               this.selectedProjects=this.projects;
           }
-          console.log(this.selectedProjects)
       },
      
   }

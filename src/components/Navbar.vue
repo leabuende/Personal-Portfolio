@@ -25,25 +25,30 @@
     </div>
     <div class="bottom">
       <transition name="fade">
-        <div class="overlay" v-if="burgerToggle">
+        <div class="overlay" v-if="burgerToggle" @click="burgerToggle = !burgerToggle">
           <div class="bottom-links">
+              <div>
+              <router-link to="/" class="bottom-nav-links links"
+                >Home</router-link
+              >
+            </div>
             <div>
-              <router-link to="" class="bottom-nav-links links"
+              <router-link to="/about" class="bottom-nav-links links"
                 >About</router-link
               >
             </div>
             <div>
-              <router-link to="" class="bottom-nav-links links"
+              <router-link to="/works" class="bottom-nav-links links"
                 >Work</router-link
               >
             </div>
             <div>
-              <router-link to="" class="bottom-nav-links links"
+              <router-link to="/blog" class="bottom-nav-links links"
                 >Blog</router-link
               >
             </div>
             <div>
-              <router-link to="" class="bottom-nav-links links"
+              <router-link to="/contact" class="bottom-nav-links links"
                 >Contact</router-link
               >
             </div>
@@ -52,8 +57,11 @@
       </transition>
       <div class="bottom-navbar">
         <div class="left-nav">
-          <img src="../assets/chat.png" alt="" class="cat-img" />
-          <p class="name">Léa Buendé</p>
+        <router-link to="/">
+   <img src="../assets/chat.png" alt="" class="cat-img" />
+        </router-link>
+                 <p class="name">Léa Buendé</p>
+
         </div>
         <div class="right-nav">
           <div class="burger-menu" @click="burgerToggle = !burgerToggle">
@@ -172,6 +180,9 @@ export default {
     height: 31px;
     width: 35px;
     vertical-align: middle;
+  }
+  .burger-menu:hover{
+      cursor: pointer;
   }
   .burger {
     height: 5px;

@@ -9,7 +9,10 @@
         <h1>{{ name }}</h1>
         <p class="description">{{ description }}</p>
         <div class="button">
+            <router-link :to="'/works/'+link">
           <button class="white-button">View case study</button>
+
+            </router-link>
         </div>
       </div>
     </div>
@@ -24,6 +27,7 @@ export default {
     description: String,
     skills: Array,
     image: String,
+    link: String
   },
 };
 </script>
@@ -39,6 +43,7 @@ export default {
 }
 .project img {
   width: 100%;
+  height:100%;
 }
 .img-overlay {
   top: 0;

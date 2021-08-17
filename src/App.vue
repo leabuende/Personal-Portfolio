@@ -22,6 +22,7 @@ export default {
 font-family: 'Karla', sans-serif;
 background-color: #FAFAFA;
 min-height:100vh;
+overflow: hidden;
 }
 .nav{
   z-index:4
@@ -32,6 +33,7 @@ min-height:100vh;
   justify-content: center;
   margin-top:100px;
   padding:20px;
+  min-height:100vh;
 }
 .view{
   width:100vw;
