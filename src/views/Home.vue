@@ -3,19 +3,19 @@
     <Presentation />
     <h2>My latest projects</h2>
     <div class="container">
-      <div class="column" v-for="(project, i) in projects" :key="i">
+      <div class="column" v-for="(project, i) in featuredProjects()" :key="i">
         <Project
           class="project-card"
-          :image="require(`@/assets/projects/${project.link}/${project.img}`)"
-          :name="project.name"
+          :image="require(`@/assets/projects/${project.url}/${project.thumbnail}`)"
+          :name="project.title"
           :description="project.description"
           :skills="project.skills"
-          :link="project.link"
+          :link="project.url"
         />
       </div>
     </div>
     <div class="see-more-link">
-      <router-link to="" class="links  animated-links">See more</router-link>
+      <router-link to="/works" class="links  animated-links">See more</router-link>
     </div>
     <h2>A word from my friends and team mates ❤️</h2>
     <Testimonials />
@@ -35,33 +35,12 @@ export default {
     Project,
     Testimonials,
   },
-  data() {
-    return {
-      projects: [
-        {
-          name: "Project Number One",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          link: "monordo",
-        },
-        {
-          name: "24 Days of Javascriptmas",
-          description: "Solving problems in Javascript every day unyil Christmas, and filming my solutions explained",
-          skills: ["Development"],
-          img: "project-card.jpeg",
-          link: "javascriptmas",
-        },
-        {
-          name: "Project Number Two",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          link: "monordo",
-        },
-      ],
-    };
-  },
+  methods:{
+    featuredProjects(){
+      const shuffled = this.$projects.sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, 3);
+    }
+  }
 };
 </script>
 <style scoped>

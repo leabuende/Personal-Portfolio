@@ -55,17 +55,25 @@
             Links
           </div>
           <div class="info-text ">
-              <a class="links animated-links" :href="link.link" target="_blank" v-for="(link,i) in getProject().infobox.links" :key="i">
-                  {{link.name}}
-              </a>
-
+            <a
+              class="links animated-links"
+              :href="link.link"
+              target="_blank"
+              v-for="(link, i) in getProject().infobox.links"
+              :key="i"
+            >
+              {{ link.name }}
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div class="section">
-      <div class="section-content" v-html="getProject().paragraph"></div>
+      <div class="section-content">
+        <component :is="$route.params.name" />
+      </div>
     </div>
+<!--
     <div class="section">
       <carousel :perPage="1" class=" section-content">
         <slide
@@ -82,90 +90,30 @@
         </slide>
       </carousel>
     </div>
+-->
 
-    <div class="section">
-      <div class="section-content lesson-box">
-        <h2>What I learned from this project</h2>
-        <p v-html="getProject().lesson"></p>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
+const javascriptmas = () =>
+  import(
+    /* webpackChunkName: "javascriptmas" */ "./Projects/Javascriptmas.vue"
+  );
+const ladies = () =>
+  import(/* webpackChunkName: "ladies" */ "./Projects/Ladies.vue");
+const monordo = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Monordo.vue");
 
 export default {
   name: "Project",
   components: {
     Carousel,
     Slide,
-  },
-  data() {
-    return {
-      selectedProject: {},
-      projects: [
-        {
-          url: "monordo",
-          title: "Project 1",
-          description:
-            "Lorem Ipsum has been the industry's standard dummy text.",
-          thumbnail: "project-card.png",
-          infobox: {
-            skills:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
-            context:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
-            mission:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
-            time: "3 weeks",
-            links: [
-                {
-                    name:"Github",
-                    link:"www.github.com"
-                }
-            ]
-          },
-          paragraph:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
-          pictures: ["album/project-card.png", "album/project-card.png"],
-          lesson:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget feugiat mauris.",
-        },
-        {
-          url: "javascriptmas",
-          title: "24 Days of Javascriptmas",
-          description:
-            "Solving problems in Javascript every day unyil Christmas, and filming my solutions explained",
-          thumbnail: "project-card.jpeg",
-          infobox: {
-            skills:
-              "Vanilla JS, synthesize explanations and editing fast-paced videos",
-            context:
-              "December 2020, Scrumba released a 24 Days of Javascriptmas challenge.",
-            mission:
-              "Solving the exercices, and editing clear and understandable explanation videos",
-            time: "24 Days (and not one more)",
-            links: [
-                {
-                    name:"Instagram",
-                    link:"https://www.instagram.com/lea.buende/channel/"
-                },
-                {
-                    name:"Linkedin",
-                    link:"https://www.linkedin.com/posts/l%C3%A9a-buend%C3%A9-65b440174_il-y-a-14-jours-je-me-suis-lanc%C3%A9-un-nouveau-activity-6744175097650663424-W6Au"
-                },
-
-            ]
-          },
-          paragraph:
-            "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
-          pictures: ["album/1.png", "album/2.png"],
-          lesson:
-            "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
-        },
-      ],
-    };
+    javascriptmas,
+    ladies,
+    monordo,
   },
   methods: {
     backgroundStyles(project, thumbnail) {
@@ -176,7 +124,7 @@ export default {
       };
     },
     getProject() {
-      return this.projects.find((x) => x.url == this.$route.params.name);
+      return this.$projects.find((x) => x.url == this.$route.params.name);
     },
   },
 };
@@ -247,22 +195,16 @@ export default {
   height: 100%;
   width: auto;
 }
-.lesson-box {
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.05);
-  padding: 15px;
-  width: 100%;
-}
-.lesson-box p{
-    margin-top:16px;
-}
-.links{
-    font-style: italic;
-        font-weight: bold;
-        font-family: roboto;
 
-    margin-right: 10px;
+.lesson-box p {
+  margin-top: 16px;
+}
+.links {
+  font-style: italic;
+  font-weight: bold;
+  font-family: roboto;
+
+  margin-right: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -276,10 +218,13 @@ export default {
   .info-text {
     flex: 100%;
   }
+  .carousel {
+    height: auto;
+  }
   .carousel img {
     width: 100%;
     object-fit: cover;
-    height: 300px;
+    height: auto;
   }
 }
 </style>

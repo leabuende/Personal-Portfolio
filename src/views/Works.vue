@@ -18,11 +18,11 @@
       <div class="column" v-for="(project, i) in selectedProjects" :key="i">
         <Project
           class="project-card"
-          :image="require(`@/assets/projects/${project.link}/${project.img}`)"
-          :name="project.name"
+          :image="require(`@/assets/projects/${project.url}/${project.thumbnail}`)"
+          :name="project.title"
           :description="project.description"
           :skills="project.skills"
-          :link="project.link"
+          :link="project.url"
         />
       </div>
     </div>
@@ -45,39 +45,21 @@ export default {
     return {
       toggleFilter: false,
       selectedProjects: "",
-      projects: [
-        {
-          name: "Project Number One",
-          description: "A wonderfully unique project, very fun to do",
-          skills: ["Development", "UX/UI Design"],
-          img: "project-card.png",
-          tags: ["design", "code"],
-          link: "monordo",
-        },
-        {
-          name: "24 Days of Javascriptmas",
-          description: "Solving problems in Javascript every day unyil Christmas, and filming my solutions explained",
-          skills: ["Development"],
-          img: "project-card.jpeg",
-          tags: ["design"],
-          link: "javascriptmas",
-        },
-      ],
     };
   },
   created() {
-    this.selectedProjects = this.projects;
+    this.selectedProjects = this.$projects;
   },
   methods: {
     filterProjects(category) {
       this.selectedProjects = [];
-      this.projects.forEach((e) => {
+      this.$projects.forEach((e) => {
         if (e.tags.includes(category)) {
           this.selectedProjects.push(e);
         }
       });
       if (category == "all") {
-        this.selectedProjects = this.projects;
+        this.selectedProjects = this.$projects;
       }
     },
   },

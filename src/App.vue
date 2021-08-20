@@ -94,6 +94,16 @@ h2{
   width: 100%; 
   left: 0; 
 }
+
+/* Project classes */
+.lesson-box {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  width: 100%;
+}
+
 @media only screen and (max-width: 480px) {
   .page{
     margin-top:0;

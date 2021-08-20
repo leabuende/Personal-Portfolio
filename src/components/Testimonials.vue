@@ -46,20 +46,20 @@ export default {
     return {
       testimonials: [
         {
-          img: "profile1.png",
-          name: "Duc-Thomas Nguyen",
-          title: "developer @ Touch and Sell",
+          img: "vincent.png",
+          name: "Vicent Hébert",
+          title: "CFO @ Interconstruction",
           testimonial:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et tellus quam. Mauris scelerisque mauris vel leo ultricies eleifend. Duis facilisis suscipit lobortis. Fusce at venenatis mauris. Proin facilisis risus et pulvinar molestie. Cras in arcu ac sem consequat accumsan. Morbi viverra lacus quis erat posuere, id accumsan diam sollicitudin. Aenean ac lectus euismod arcu iaculis cursus sed eget lorem. ",
-          endorsed: "development / ux design",
+            "Léa has been a very reliable coworker, going above and beyond of her tasks in the office. She has shown great courage, managing her job with her other responabilities and school worK. ",
+          endorsed: "initiative / communication",
         },
         {
-          img: "profile1.png",
-          name: "Duc-Thomas Nguyen",
-          title: "developer @ Touch and Sell",
+          img: "mom.png",
+          name: "Sabine",
+          title: "mom @ Buendé family",
           testimonial:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et tellus quam. Mauris scelerisque mauris vel leo ultricies eleifend. Duis facilisis suscipit lobortis. Fusce at venenatis mauris. Proin facilisis risus et pulvinar molestie. Cras in arcu ac sem consequat accumsan. Morbi viverra lacus quis erat posuere, id accumsan diam sollicitudin. Aenean ac lectus euismod arcu iaculis cursus sed eget lorem. ",
-          endorsed: "development / ux design",
+            "Overall perfect human being. hire her.",
+          endorsed: "everything",
         },
         {
           img: "profile1.png",
@@ -77,6 +77,7 @@ export default {
 <style scoped>
 .testimonial{
     margin-top:32px;
+    width:100%;
 }
 .slide {
   text-align: center;
