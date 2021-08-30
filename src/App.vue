@@ -14,7 +14,7 @@ export default {
   components : {
     Navbar,
     Footer
-  }
+  },
 }
 </script>
 <style>
@@ -102,7 +102,41 @@ h2{
   box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.05);
   padding: 15px;
   width: 100%;
+  margin-top:40px;
 }
+
+.project-component{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.half-section{
+    width:50%;
+    flex:50%;
+    padding:10px 0px 10px 0px;
+}
+.full-section{
+    width:100%;
+    flex:100%;
+}
+.half-section-media{
+    padding: 10px;
+}
+.half-section-media img{
+    width:100%;
+    height:auto;
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 768px) {
+    .half-section{
+    width:100%;
+    flex:100%;
+}
+.half-section-media{
+    padding:10px 0px 10px 0px;
+}
+}
+
 
 @media only screen and (max-width: 480px) {
   .page{

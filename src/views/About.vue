@@ -43,7 +43,7 @@
             </p>
           </div>
           <div class="column">
-            <h2 class="category-title">Eductaion</h2>
+            <h2 class="category-title">Education</h2>
             <p class="category-text">
               Software Engineering major @ Efrei Paris
             </p>
@@ -90,7 +90,7 @@
           <div class="column">
             <h2 class="category-title">Skills</h2>
             <div class="icons">
-              <div class="icon" v-for="tech in techs" :key="tech.naùe">
+              <div class="icon tech" v-for="tech in techs" :key="tech.naùe">
                 <a :href="tech.link">
                   <img
                     :src="require(`@/assets/tech-icons/${tech.img}.png`)"
@@ -134,19 +134,18 @@
             <h2 class="category-title">I'm passionate about...</h2>
             <div class="icons">
               <div class="icon" v-for="passion in passions" :key="passion.name">
-                <a :href="passion.link">
                   <img
                     :src="require(`@/assets/passions-icons/${passion.img}.png`)"
                     alt=""
-                /></a>
+                />
               </div>
             </div>
           </div>
           <div class="alt-column">
             <h2 class="category-title">And inspired by...</h2>
             <div class="icons">
-              <div class="icon" v-for="inspiration in inspirations" :key="inspiration.name">
-                <a :href="inspiration.link">
+              <div class="icon inspired" v-for="inspiration in inspirations" :key="inspiration.name">
+                <a :href="inspiration.link" target="_blank">
                   <img
                     :src="require(`@/assets/passions-icons/${inspiration.img}.png`)"
                     alt=""
@@ -178,66 +177,61 @@ export default {
         {
           name: "Vue.js",
           img: "vue",
-          link: "www.vuejs.org",
+          link: "https://vuejs.org/",
         },
         {
           name: "Javascript",
           img: "js",
-          link: "www.vuejs.org",
+          link: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
         },
         {
           name: "Node.js",
           img: "node",
-          link: "www.vuejs.org",
+          link: "https://nodejs.org/en/",
         },
         {
           name: "Figma",
           img: "figma",
-          link: "www.vuejs.org",
+          link: "https://www.figma.com/community",
         },
         {
           name: "Wordpress",
           img: "wordpress",
-          link: "www.vuejs.org",
+          link: "https://fr.wordpress.org/",
         },
       ],
       tools: [
         {
           name: "Slack",
           img: "slack",
-          link: "www.slack.com",
+          link: "https://slack.com/intl/fr-fr/",
         },
         {
           name: "Notion",
           img: "notion",
-          link: "www.notion.org",
-        },
-        {
-          name: "Node.js",
-          img: "node",
-          link: "www.vuejs.org",
+          link: "https://www.notion.so/",
         },
         {
           name: "Gitlab",
           img: "gitlab",
-          link: "www.gitlab.com",
+          link: "https://about.gitlab.com/",
         },
         {
           name: "Github",
           img: "github",
-          link: "www.github.com",
+          link: "https://github.com/",
         },
       ],
       inspirations: [
         {
           name: "Heidi Lamarr",
           img: "heidi",
-          link: "www.slack.com",
+          link: "https://fr.wikipedia.org/wiki/Hedy_Lamarr",
         },
         {
           name: "Michelle Obama",
           img: "michelle",
-          link: "www.notion.org",
+          link: "https://fr.wikipedia.org/wiki/Michelle_Obama",
         },
       ],
       passions: [
@@ -341,6 +335,10 @@ export default {
 }
 .icon {
   margin-right: 10px;
+}
+.inspired img{
+    height:55px;
+
 }
 .button{
   position:absolute;

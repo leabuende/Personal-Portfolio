@@ -8,6 +8,8 @@ import axios from "axios";
 Vue.use(VueCarousel);
 Vue.use(VueRouter);
 Vue.prototype.$http = axios;
+Vue.prototype.$loaded = false;
+
 Vue.prototype.$projects = [
   {
     url: "monordo",
@@ -80,21 +82,16 @@ Vue.prototype.$projects = [
     tags: ["design", "extra"],
     infobox: {
       skills:
-        "Vanilla JS, synthesize explanations and editing fast-paced videos",
+        "Managing a Paris-based community of women in STEM",
       context:
-        "December 2020, Scrumba released a 24 Days of Javascriptmas challenge.",
+        "Ladies of Code got me into coding, and I wanted to give back to the community !",
       mission:
-        "Solving the exercices, and editing clear and understandable explanation videos",
-      time: "24 Days (and not one more)",
+        "Designing planning and posting visuals on Instagram, interact with the members",
+      time: "6 months",
       links: [
         {
           name: "Instagram",
-          link: "https://www.instagram.com/lea.buende/channel/",
-        },
-        {
-          name: "Linkedin",
-          link:
-            "https://www.linkedin.com/posts/l%C3%A9a-buend%C3%A9-65b440174_il-y-a-14-jours-je-me-suis-lanc%C3%A9-un-nouveau-activity-6744175097650663424-W6Au",
+          link: "https://www.instagram.com/ladiesofcode.paris",
         },
       ],
     },
@@ -111,4 +108,7 @@ Vue.prototype.$projects = [
 new Vue({
   router,
   render: (h) => h(App),
+  created : function () {
+    setTimeout(()=>{this.$loaded=true, console.log(this.$loaded)},3000)
+  }
 }).$mount("#app");
