@@ -105,7 +105,8 @@ const ladies = () =>
   import(/* webpackChunkName: "ladies" */ "./Projects/Ladies.vue");
 const monordo = () =>
   import(/* webpackChunkName: "monordo" */ "./Projects/Monordo.vue");
-
+const euris = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Euris.vue");
 export default {
   name: "Project",
   components: {
@@ -114,6 +115,7 @@ export default {
     javascriptmas,
     ladies,
     monordo,
+    euris
   },
   methods: {
     backgroundStyles(project, thumbnail) {

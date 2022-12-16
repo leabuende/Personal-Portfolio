@@ -101,6 +101,35 @@ Vue.prototype.$projects = [
     lesson:
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
   },
+  {
+    url: "euris",
+    title: "Euris Group Website",
+    description:
+      "Designing and developing Euris Group's website and visual identity",
+    thumbnail: "project-card.png",
+    skills: ["Development","Web Design"],
+    tags: [ "code", "design"],
+    infobox: {
+      skills:
+        "Web design, Wordpress integration, SEO analysis, project management",
+      context:
+        "Euris Group, a finance group speicalized in Islamic banking, is rebranding and launching a series of projects start of 2023. We are working together to develop their online presence, and attract investors and stakeholders.",
+      mission:
+        "Designing and developing the website, and analyze and better SEO performance",
+      time: "1 month",
+      links: [
+        {
+          name: "Website",
+          link: "https://www.euris-group.com/",
+        }
+      ],
+    },
+    paragraph:
+      "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+    pictures: ["album/1.png", "album/2.png", "album/3.png"],
+    lesson:
+      "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
+  },
 ]
 
   Vue.config.productionTip = false;
