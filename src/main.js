@@ -130,6 +130,130 @@ Vue.prototype.$projects = [
     lesson:
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
   },
+  {
+    url: "efrei",
+    title: "Efrei 4 good App",
+    description:
+      "Designing two versions of the Efrei for good App",
+    thumbnail: "project-card.png",
+    skills: ["Web Design"],
+    tags: ["design"],
+    infobox: {
+      skills:
+        "Mobile app design",
+      context:
+        "Efrei 4 Good is a yearly event highlighting disability innovation, for all students at Efrei Paris. We developed an app for students to organize and track their activities during the day.",
+      mission:
+        "Designing all views of a mobile application and conceptualize the user journey",
+      time: "2 month",
+      links: [
+        {
+          name: "Article",
+          link: "https://www.efrei.fr/journee-de-la-technologie-au-service-de-lhumain/#:~:text=Rendez%2Dvous%20le%209%20d%C3%A9cembre,ext%C3%A9rieurs%2C%20lyc%C3%A9ens%20et%20leur%20famille.",
+        }
+      ],
+    },
+    paragraph:
+      "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+    pictures: ["album/1.png", "album/2.png", "album/3.png"],
+    lesson:
+      "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
+  },
+  {
+    url: "vivatech",
+    title: "SmartMove - Code4Good Hackathon",
+    description:
+      "The future of Urban mobility with Freenow",
+    thumbnail: "project-card.png",
+    skills: ["Design", "Project management"],
+    tags: ["extra"],
+    infobox: {
+      skills:
+        "Solve a real life problem, live pitching, design",
+      context:
+        "During Vivatech June 2022, FreeNow participated in the Code4Good Hackathon presenting the problem 'Designing the future of urban mobility'",
+      mission:
+        "Coming up with an innovative solutions to prevent the purchase of a personal car",
+      time: "2 weeks",
+      links: [
+        {
+          name: "Article",
+          link: "https://www.mobilitesmagazine.com/post/smart-move-gagne-le-defi-freenow",
+        }
+      ],
+    },
+    paragraph:
+      "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+    pictures: ["album/1.png", "album/2.png", "album/3.png"],
+    lesson:
+      "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
+  },
+  {
+    url: "sepefrei",
+    title: "Managing Efrei's Junior-Enterprise",
+    description:
+      "The future of Urban mobility with Freenow",
+    thumbnail: "project-card.png",
+    skills: ["Leadership", "Tech project management", "Dev"],
+    tags: ["extra", "code"],
+    infobox: {
+      skills:
+        "Managing a team, solving problems, development",
+      context:
+        "A Junior Enterprise is a student-run organization that provides services to companies. Sepefrei is specialized in tech, developing web and mobile applications, but also providing services in cybersecurity and Cloud infrastructures.",
+      mission:
+        "Managing a team of 16 collaborators, concieve and follow a business strategy",
+      time: "2 years",
+      links: [
+        {
+          name: "Linkedin post",
+          link: "https://www.linkedin.com/posts/leabuende_%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F-%3F%3F%3F-il-y-activity-6933052669162864640-jydw?utm_source=share&utm_medium=member_desktop",
+        },
+        {
+          name: "Code vs. No code Podcast",
+          link: "https://youtu.be/y-ocMWOtzqk?list=PLDIh2gS6Ac4GrMzvE02OVn8YS2y034qvm"
+        }
+      ],
+    },
+    paragraph:
+      "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+    pictures: ["album/1.png", "album/2.png", "album/3.png"],
+    lesson:
+      "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
+  },
+  {
+    url: "sepefrei",
+    title: "Managing Efrei's Junior-Enterprise",
+    description:
+      "The future of Urban mobility with Freenow",
+    thumbnail: "project-card.png",
+    skills: ["Leadership", "Tech project management", "Dev"],
+    tags: ["extra", "code"],
+    infobox: {
+      skills:
+        "Managing a team, solving problems, development",
+      context:
+        "A Junior Enterprise is a student-run organization that provides services to companies. Sepefrei is specialized in tech, developing web and mobile applications, but also providing services in cybersecurity and Cloud infrastructures.",
+      mission:
+        "Managing a team of 16 collaborators, concieve and follow a business strategy",
+      time: "2 years",
+      links: [
+        {
+          name: "Linkedin post",
+          link: "https://www.linkedin.com/posts/leabuende_%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F-%3F%3F%3F-il-y-activity-6933052669162864640-jydw?utm_source=share&utm_medium=member_desktop",
+        },
+        {
+          name: "Code vs. No code Podcast",
+          link: "https://youtu.be/y-ocMWOtzqk?list=PLDIh2gS6Ac4GrMzvE02OVn8YS2y034qvm"
+        }
+      ],
+    },
+    paragraph:
+      "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+    pictures: ["album/1.png", "album/2.png", "album/3.png"],
+    lesson:
+      "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
+  },
 ]
 
   Vue.config.productionTip = false;
