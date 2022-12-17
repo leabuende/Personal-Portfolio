@@ -217,40 +217,164 @@ Vue.prototype.$projects = [
     },
     paragraph:
       "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
-    pictures: ["album/1.png", "album/2.png", "album/3.png"],
+    pictures: [],
     lesson:
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
   },
   {
-    url: "sepefrei",
-    title: "Managing Efrei's Junior-Enterprise",
+    url: "24women",
+    title: "24 Women in STEM Project",
     description:
-      "The future of Urban mobility with Freenow",
+      "Interviews with 24 women in STEM on IGTV",
     thumbnail: "project-card.png",
-    skills: ["Leadership", "Tech project management", "Dev"],
-    tags: ["extra", "code"],
+    skills: ["Video editing", "network"],
+    tags: ["extra"],
     infobox: {
       skills:
-        "Managing a team, solving problems, development",
+        "Video editing, interviewing skills, networking",
       context:
-        "A Junior Enterprise is a student-run organization that provides services to companies. Sepefrei is specialized in tech, developing web and mobile applications, but also providing services in cybersecurity and Cloud infrastructures.",
+        "In 2021, I decided to find a new project to do before Christmas. This time, I wanted to highlight women in the industries related to STEM, where they are often underrepresented.",
       mission:
-        "Managing a team of 16 collaborators, concieve and follow a business strategy",
-      time: "2 years",
+        "Interviewing 24 women with a STEM background before Christmas",
+      time: "2 monthes",
       links: [
         {
-          name: "Linkedin post",
-          link: "https://www.linkedin.com/posts/leabuende_%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F-%3F%3F%3F-il-y-activity-6933052669162864640-jydw?utm_source=share&utm_medium=member_desktop",
+          name: "Interview with Adélaïde",
+          link: "https://www.youtube.com/watch?v=DApZdomeBzw",
         },
         {
-          name: "Code vs. No code Podcast",
-          link: "https://youtu.be/y-ocMWOtzqk?list=PLDIh2gS6Ac4GrMzvE02OVn8YS2y034qvm"
+          name: "Interview with Zoé",
+          link: "https://www.youtube.com/watch?v=nuEKtWDAOmE&t=3s"
         }
       ],
     },
     paragraph:
       "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
-    pictures: ["album/1.png", "album/2.png", "album/3.png"],
+    pictures: [],
+    lesson:
+      "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
+  },
+  {
+    url: "ownest",
+    title: "Front-End developer Internship",
+    description:
+      "6 month Front-End developer internship in a web3 start-up",
+    thumbnail: "project-card.png",
+    skills: ["Vue.js", "Web3"],
+    tags: ["code"],
+    infobox: {
+      skills:
+        "Front-end development, discovering Ethereum Smart contracts",
+      context:
+        "Starting November 2021, I spent 6 months in the Ownest development team. Ownest is a web3 start-up specialized in applying Blockchain to logistics management.",
+      mission:
+        "Developing and integrating new features to Ownest products, refactoring existing code",
+      time: "6 months",
+      links: [
+        {
+          name: "Ownest website",
+          link: "https://ownest.io/",
+        }
+      ],
+    },
+    paragraph:
+      "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+    pictures: [],
+    lesson:
+      "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
+  },
+  {
+    url: "handimanagement",
+    title: "Handimanagement",
+    description:
+      "Learning and sharing best practices for keeping an inclusive office",
+    thumbnail: "project-card.png",
+    skills: ["Inclusivity", "Management"],
+    tags: ["extra"],
+    infobox: {
+      skills:
+        "Organize and animate conferences",
+      context:
+        "In 2021, I decided to find a new project to do before Christmas. This time, I wanted to highlight women in the industries related to STEM, where they are often underrepresented.",
+      mission:
+        "Interviewing 24 women with a STEM background before Christmas",
+      time: "2 monthes",
+      links: [
+        {
+          name: "Github",
+          link: "https://www.youtube.com/watch?v=DApZdomeBzw",
+        }
+      ],
+    },
+    paragraph:
+      "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+    pictures: [],
+    lesson:
+      "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
+  },
+  {
+    url: "google-hackathon",
+    title: "24 Women in STEM Project",
+    description:
+      "Interviews with 24 women in STEM on IGTV",
+    thumbnail: "project-card.png",
+    skills: ["Video editing", "network"],
+    tags: ["extra"],
+    infobox: {
+      skills:
+        "Video editing, interviewing skills, networking",
+      context:
+        "In 2021, I decided to find a new project to do before Christmas. This time, I wanted to highlight women in the industries related to STEM, where they are often underrepresented.",
+      mission:
+        "Interviewing 24 women with a STEM background before Christmas",
+      time: "2 monthes",
+      links: [
+        {
+          name: "Interview with Adélaïde",
+          link: "https://www.youtube.com/watch?v=DApZdomeBzw",
+        },
+        {
+          name: "Interview with Zoé",
+          link: "https://www.youtube.com/watch?v=nuEKtWDAOmE&t=3s"
+        }
+      ],
+    },
+    paragraph:
+      "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+    pictures: [],
+    lesson:
+      "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
+  },
+  {
+    url: "cicd-porfolio",
+    title: "24 Women in STEM Project",
+    description:
+      "Interviews with 24 women in STEM on IGTV",
+    thumbnail: "project-card.png",
+    skills: ["Video editing", "network"],
+    tags: ["code"],
+    infobox: {
+      skills:
+        "Video editing, interviewing skills, networking",
+      context:
+        "In 2021, I decided to find a new project to do before Christmas. This time, I wanted to highlight women in the industries related to STEM, where they are often underrepresented.",
+      mission:
+        "Interviewing 24 women with a STEM background before Christmas",
+      time: "2 monthes",
+      links: [
+        {
+          name: "Interview with Adélaïde",
+          link: "https://www.youtube.com/watch?v=DApZdomeBzw",
+        },
+        {
+          name: "Interview with Zoé",
+          link: "https://www.youtube.com/watch?v=nuEKtWDAOmE&t=3s"
+        }
+      ],
+    },
+    paragraph:
+      "<p class='paragraph'>14 days ago I set myself up to a new challenge: creating an advent calendar of videos solving small problems in JavaScript, explaining my solutions and posting them on Instagram. 👩‍💻</p><br><p> My goal: encouraging anyone to get into programming. The challenge: finding the right words to explain each function, showing my mistakes and most importantly getting across that spending time correcting them is by far the fun part of coding.</p><br><p> The outcome: I receive messages from baby developers ready to start their coding journey every single day 🦾</p>",
+    pictures: [],
     lesson:
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
   },
