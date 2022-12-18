@@ -222,7 +222,7 @@ Vue.prototype.$projects = [
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
   },
   {
-    url: "24women",
+    url: "women",
     title: "24 Women in STEM Project",
     description:
       "Interviews with 24 women in STEM on IGTV",
@@ -346,7 +346,7 @@ Vue.prototype.$projects = [
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
   },
   {
-    url: "cicd-portfolio",
+    url: "cicdportfolio",
     title: "Portfolio CI/CD pipeline",
     description:
       "Setting up a CI/CD pipeline for my portfolio website",

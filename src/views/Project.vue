@@ -107,8 +107,8 @@ const monordo = () =>
   import(/* webpackChunkName: "monordo" */ "./Projects/Monordo.vue");
 const euris = () =>
   import(/* webpackChunkName: "monordo" */ "./Projects/Euris.vue");
-const cicd = () =>
-  import(/* webpackChunkName: "monordo" */ "./Projects/Cicd-portfolio.vue");
+const cicdportfolio = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Cicdportfolio.vue");
 const Women = () =>
   import(/* webpackChunkName: "monordo" */ "./Projects/Women.vue");
   const Vivatech = () =>
@@ -130,7 +130,7 @@ export default {
     ladies,
     monordo,
     euris,
-    cicd,
+    cicdportfolio,
     Women,
     Vivatech,
     Handimanagement,
