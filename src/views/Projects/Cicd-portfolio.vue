@@ -21,9 +21,6 @@
       <div class="half-section half-section-media ">
         <img src="@/assets/projects/euris/album/2.png" alt="" />
       </div>
-      <div class="half-section half-section-media">
-        <img src="@/assets/projects/euris/album/3.png" alt="" />
-      </div>
       <div class="half-section">
         <p>
           The most scary part of it all : creating original developer memes, while
@@ -54,7 +51,7 @@
   
   <script>
   export default {
-    name: "24Women",
+    name: "cicd-portfolio",
   };
   </script>
   <style scoped></style>

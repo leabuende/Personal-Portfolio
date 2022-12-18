@@ -16,13 +16,13 @@
         <br />
       </div>
       <div class="full-section half-section-media">
-        <img src="@/assets/projects/vivatech/album/1.png" alt="" />
+        <img src="@/assets/projects/sepefrei/album/1.png" alt="" />
       </div>
       <div class="half-section half-section-media ">
-        <img src="@/assets/projects/vivatech/album/2.png" alt="" />
+        <img src="@/assets/projects/sepefrei/album/2.png" alt="" />
       </div>
-      <div class="full-section half-section-media ">
-        <img src="@/assets/projects/vivatech/album/3.png" alt="" />
+      <div class="half-section half-section-media">
+        <img src="@/assets/projects/sepefrei/album/3.png" alt="" />
       </div>
       <div class="half-section">
         <p>
@@ -54,7 +54,7 @@
   
   <script>
   export default {
-    name: "Vivatech",
+    name: "Sepefrei",
   };
   </script>
   <style scoped></style>

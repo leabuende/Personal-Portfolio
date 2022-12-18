@@ -16,10 +16,13 @@
         <br />
       </div>
       <div class="full-section half-section-media">
-        <img src="@/assets/projects/euris/album/1.png" alt="" />
+        <img src="@/assets/projects/women/album/1.png" alt="" />
       </div>
       <div class="half-section half-section-media ">
-        <img src="@/assets/projects/euris/album/2.png" alt="" />
+        <img src="@/assets/projects/women/album/2.png" alt="" />
+      </div>
+      <div class="half-section half-section-media">
+        <img src="@/assets/projects/women/album/3.png" alt="" />
       </div>
       <div class="half-section">
         <p>
@@ -51,7 +54,7 @@
   
   <script>
   export default {
-    name: "Cicd",
+    name: "Women",
   };
   </script>
   <style scoped></style>

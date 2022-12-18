@@ -313,7 +313,7 @@ Vue.prototype.$projects = [
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
   },
   {
-    url: "google-hackathon",
+    url: "googlehackathon",
     title: "Google - Cloud for Climate Hackathon",
     description:
       "3 Days to develop a solution using cloud to fight against global warming",
@@ -346,7 +346,7 @@ Vue.prototype.$projects = [
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
   },
   {
-    url: "cicd-porfolio",
+    url: "cicd-portfolio",
     title: "Portfolio CI/CD pipeline",
     description:
       "Setting up a CI/CD pipeline for my portfolio website",

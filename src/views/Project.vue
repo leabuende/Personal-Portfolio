@@ -107,6 +107,20 @@ const monordo = () =>
   import(/* webpackChunkName: "monordo" */ "./Projects/Monordo.vue");
 const euris = () =>
   import(/* webpackChunkName: "monordo" */ "./Projects/Euris.vue");
+const cicd = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Cicd-portfolio.vue");
+const Women = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Women.vue");
+  const Vivatech = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Vivatech.vue");
+  const Ownest = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Ownest.vue");
+  const Handimanagement = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Handimanagement.vue");
+  const Google = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Google.vue");
+  const Sepefrei = () =>
+  import(/* webpackChunkName: "monordo" */ "./Projects/Sepefrei.vue");
 export default {
   name: "Project",
   components: {
@@ -115,7 +129,14 @@ export default {
     javascriptmas,
     ladies,
     monordo,
-    euris
+    euris,
+    cicd,
+    Women,
+    Vivatech,
+    Handimanagement,
+    Ownest,
+    Google,
+    Sepefrei
   },
   methods: {
     backgroundStyles(project, thumbnail) {
