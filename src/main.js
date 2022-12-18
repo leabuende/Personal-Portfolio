@@ -295,9 +295,9 @@ Vue.prototype.$projects = [
       skills:
         "Organize and animate conferences",
       context:
-        "In 2021, I decided to find a new project to do before Christmas. This time, I wanted to highlight women in the industries related to STEM, where they are often underrepresented.",
+        "In 2021, during my year of presidency at the Junior-Enterprise, I wanted to learn more about managing a diverse team",
       mission:
-        "Interviewing 24 women with a STEM background before Christmas",
+        "",
       time: "2 monthes",
       links: [
         {
@@ -314,28 +314,28 @@ Vue.prototype.$projects = [
   },
   {
     url: "google-hackathon",
-    title: "24 Women in STEM Project",
+    title: "Google - Cloud for Climate Hackathon",
     description:
-      "Interviews with 24 women in STEM on IGTV",
+      "3 Days to develop a solution using cloud to fight against global warming",
     thumbnail: "project-card.png",
-    skills: ["Video editing", "network"],
+    skills: ["Pitching", "Conception"],
     tags: ["extra"],
     infobox: {
       skills:
-        "Video editing, interviewing skills, networking",
+        "Concieving an innovative Cloud solution, pritching a project",
       context:
-        "In 2021, I decided to find a new project to do before Christmas. This time, I wanted to highlight women in the industries related to STEM, where they are often underrepresented.",
+        "June 2022, Google Cloud Paris and Startupinside hosted a 3 day hackthon on the subject of preserving the environment",
       mission:
-        "Interviewing 24 women with a STEM background before Christmas",
-      time: "2 monthes",
+        "Cincieving a innovative solution using Google Cloud and pitching in front of Google Cloud employees and investors",
+      time: "3 days",
       links: [
         {
-          name: "Interview with Adélaïde",
-          link: "https://www.youtube.com/watch?v=DApZdomeBzw",
+          name: "Linkedin post",
+          link: "https://www.linkedin.com/posts/leabuende_hackathon-google-activity-6947607591392845825-ClX-?utm_source=share&utm_medium=member_desktop",
         },
         {
-          name: "Interview with Zoé",
-          link: "https://www.youtube.com/watch?v=nuEKtWDAOmE&t=3s"
+          name: "Hackathon website",
+          link: "https://www.hackathon-cloud-climat.fr/"
         }
       ],
     },
@@ -347,29 +347,29 @@ Vue.prototype.$projects = [
   },
   {
     url: "cicd-porfolio",
-    title: "24 Women in STEM Project",
+    title: "Portfolio CI/CD pipeline",
     description:
-      "Interviews with 24 women in STEM on IGTV",
+      "Setting up a CI/CD pipeline for my portfolio website",
     thumbnail: "project-card.png",
-    skills: ["Video editing", "network"],
+    skills: ["CirlceCI", "Github actions"],
     tags: ["code"],
     infobox: {
       skills:
-        "Video editing, interviewing skills, networking",
+        "Test writing, deploying, creating automations",
       context:
-        "In 2021, I decided to find a new project to do before Christmas. This time, I wanted to highlight women in the industries related to STEM, where they are often underrepresented.",
+        "",
       mission:
-        "Interviewing 24 women with a STEM background before Christmas",
-      time: "2 monthes",
+        "",
+      time: "1 week",
       links: [
         {
-          name: "Interview with Adélaïde",
+          name: "Github",
           link: "https://www.youtube.com/watch?v=DApZdomeBzw",
         },
         {
-          name: "Interview with Zoé",
-          link: "https://www.youtube.com/watch?v=nuEKtWDAOmE&t=3s"
-        }
+          name: "Project report",
+          link: "https://drive.google.com/file/d/1U0KWmlyk7ngDKN223S8-fppXYBKk6LP2/view?usp=sharing",
+        },
       ],
     },
     paragraph:
