@@ -127,6 +127,9 @@ h2{
     height:auto;
   box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.05);
 }
+.embed-post {
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.05);
+}
 @media (max-width: 768px) {
     .half-section{
     width:100%;

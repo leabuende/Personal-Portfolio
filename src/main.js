@@ -145,7 +145,7 @@ Vue.prototype.$projects = [
         "Efrei 4 Good is a yearly event highlighting disability innovation, for all students at Efrei Paris. We developed an app for students to organize and track their activities during the day.",
       mission:
         "Designing all views of a mobile application and conceptualize the user journey",
-      time: "2 month",
+      time: "2 months",
       links: [
         {
           name: "Article",
@@ -283,6 +283,7 @@ Vue.prototype.$projects = [
     lesson:
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
   },
+  /*
   {
     url: "handimanagement",
     title: "Handimanagement",
@@ -311,7 +312,7 @@ Vue.prototype.$projects = [
     pictures: [],
     lesson:
       "Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong> Praesent eget feugiat mauris.",
-  },
+  },*/
   {
     url: "google",
     title: "Google - Cloud for Climate Hackathon",
@@ -357,9 +358,9 @@ Vue.prototype.$projects = [
       skills:
         "Test writing, deploying, creating automations",
       context:
-        "",
+        "Efrei 4th year DevOps project",
       mission:
-        "",
+        "Concieve a CI/CD pipeline",
       time: "1 week",
       links: [
         {

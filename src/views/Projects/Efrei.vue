@@ -2,51 +2,37 @@
   <div class="ladies project-component">
     <div class="fullsection">
       <p>
-        When I started off my journey to becomming a programmer, I got really
-        intimidated by my classmates I was looking up to. However, I never
-        pictured myself as a developer because I didn't have any role models
-        that I could really relate to.
+        This project was a reoccurring freelancing  design job, that allowed me to conceive a first and a second version of a mobile app that would be used during 2 yearly editions of the Tech for good event at our school. 
       </p>
       <br />
       <p>
-        Then, I found <strong>Ladies of Code</strong>. A community of passionate
-        and talented women in STEM, devoted to inspiring students like myself to
-        persue carreers in Computer Engineering.
+        There were two target audiences : the app would be used by the conference masters, company representatives attending and by students. Very different age groups with different tech abilities, and of course, especially since it was the main focus of the event, the app had to be easy to use and accessible.
       </p>
       <br />
     </div>
-    <div class="full-section half-section-media">
-      <img src="@/assets/projects/euris/album/1.png" alt="" />
+    
+    <div class="half-section half-section-media screenshots">
+      <img src="@/assets/projects/efrei/album/2.png" alt="" />
     </div>
-    <div class="half-section half-section-media ">
-      <img src="@/assets/projects/euris/album/2.png" alt="" />
+    
+    <div class="full-section">
+      <p>
+        The main challenge for this app was to collect, translate and challenge the clients requirements, and adapting the design to a diverse crowd.
+      </p>
     </div>
     <div class="half-section half-section-media">
-      <img src="@/assets/projects/euris/album/3.png" alt="" />
+      <img src="@/assets/projects/efrei/album/1.png" alt="" />
     </div>
-    <div class="half-section">
-      <p>
-        The most scary part of it all : creating original developer memes, while
-        just starting of my developer learning journey myself !
+    <p></p>
+    <p>
+      Feel free to contact <a href="https://fr.linkedin.com/in/seynimbaye">Seyni M’Baye</a>, director of company relations at Efrei Paris, who can recommend me for my involvement in this exciting project. 
       </p>
-      <p>
-        However I found that the intensive hours of developer memes on Reddit
-        taught me more than some courses of my
-        <router-link to="/about" class="links animated-links">
-          Computer Engineering degree
-        </router-link>
-        did...
-      </p>
-    </div>
 
     <div class="lesson-box">
       <h2>What did I learn ?</h2>
       <br />
       <p>
-        Making <strong>memes</strong> on relateable subjects for developers
-        taught me how to stay up to date on relevant tech subjects, and also how
-        to engage in a team of developers. (Feel free to send me developer memes
-        on <a href="" class="links animated-links">Twitter</a>)
+        I learned about accessibility best practices in UX/UI design, to make an app useable by the most diverse crowd possible.
       </p>
     </div>
   </div>
@@ -57,4 +43,5 @@ export default {
   name: "Euris",
 };
 </script>
-<style scoped></style>
+<style scoped>
+</style>

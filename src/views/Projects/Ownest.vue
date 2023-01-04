@@ -1,60 +1,43 @@
 <template>
-    <div class="ladies project-component">
-      <div class="fullsection">
-        <p>
-          When I started off my journey to becomming a programmer, I got really
-          intimidated by my classmates I was looking up to. However, I never
-          pictured myself as a developer because I didn't have any role models
-          that I could really relate to.
-        </p>
-        <br />
-        <p>
-          Then, I found <strong>Ladies of Code</strong>. A community of passionate
-          and talented women in STEM, devoted to inspiring students like myself to
-          persue carreers in Computer Engineering.
-        </p>
-        <br />
-      </div>
-      <div class="full-section half-section-media">
-        <img src="@/assets/projects/ownest/album/1.png" alt="" />
-      </div>
-      <div class="half-section half-section-media ">
-        <img src="@/assets/projects/ownest/album/2.png" alt="" />
-      </div>
-      <div class="half-section half-section-media">
-        <img src="@/assets/projects/ownest/album/3.png" alt="" />
-      </div>
-      <div class="half-section">
-        <p>
-          The most scary part of it all : creating original developer memes, while
-          just starting of my developer learning journey myself !
-        </p>
-        <p>
-          However I found that the intensive hours of developer memes on Reddit
-          taught me more than some courses of my
-          <router-link to="/about" class="links animated-links">
-            Computer Engineering degree
-          </router-link>
-          did...
-        </p>
-      </div>
-  
-      <div class="lesson-box">
-        <h2>What did I learn ?</h2>
-        <br />
-        <p>
-          Making <strong>memes</strong> on relateable subjects for developers
-          taught me how to stay up to date on relevant tech subjects, and also how
-          to engage in a team of developers. (Feel free to send me developer memes
-          on <a href="" class="links animated-links">Twitter</a>)
-        </p>
-      </div>
+  <div class="ladies project-component">
+    <div class="fullsection">
+      <p>
+        During my internship, I got to give my input and think critically on technical decisions for the products
+        development. I got to implement new features mainly in a <strong>Vue.js environment</strong>, and collaborating with the back-end
+        team, following the product roadmaps. But I also got to rework the code to optimize existing functionalities and
+        be forward thinking with how the application was set to evolve in the following months. I got confronted to real
+        life issues related to application deployments, and the importance of being able to rollback on code when
+        features seem to be unfit to be used on the field.
+      </p>
+      <br>
     </div>
-  </template>
+    <div class="half-section">
+      <p>
+        I was greatly received by the Ownest team, who taught me a lot and who I shared great memories with !
+      </p>
+    </div>
+
+    <div class="half-section half-section-media">
+      <img src="@/assets/projects/ownest/album/1.png" alt="" />
+    </div>
+
+    <div class="lesson-box">
+      <h2>What did I learn ?</h2>
+      <br />
+      <p>
+        I learned a lot about the web3 community and different applications of web3 in industries I wasn’t yet familiar
+        with, I also overcame a bit of my imposter syndrome and learned learnt best practices in code and technical
+        writing.
+      </p>
+    </div>
+  </div>
+</template>
   
-  <script>
-  export default {
-    name: "Ownest",
-  };
-  </script>
-  <style scoped></style>
+<script>
+export default {
+  name: "Ownest",
+};
+</script>
+<style scoped>
+
+</style>

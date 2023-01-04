@@ -106,21 +106,21 @@ const ladies = () =>
 const monordo = () =>
   import(/* webpackChunkName: "monordo" */ "./Projects/Monordo.vue");
 const euris = () =>
-  import(/* webpackChunkName: "monordo" */ "./Projects/Euris.vue");
+  import(/* webpackChunkName: "euris" */ "./Projects/Euris.vue");
 const cicdportfolio = () =>
-  import(/* webpackChunkName: "monordo" */ "./Projects/Cicdportfolio.vue");
+  import(/* webpackChunkName: "cicd" */ "./Projects/Cicdportfolio.vue");
 const Women = () =>
-  import(/* webpackChunkName: "monordo" */ "./Projects/Women.vue");
+  import(/* webpackChunkName: "women" */ "./Projects/Women.vue");
   const Vivatech = () =>
-  import(/* webpackChunkName: "monordo" */ "./Projects/Vivatech.vue");
+  import(/* webpackChunkName: "vivatech" */ "./Projects/Vivatech.vue");
   const Ownest = () =>
-  import(/* webpackChunkName: "monordo" */ "./Projects/Ownest.vue");
-  const Handimanagement = () =>
-  import(/* webpackChunkName: "monordo" */ "./Projects/Handimanagement.vue");
+  import(/* webpackChunkName: "ownest" */ "./Projects/Ownest.vue");
+  const Efrei = () =>
+  import(/* webpackChunkName: "efrei" */ "./Projects/Efrei.vue");
   const Google = () =>
-  import(/* webpackChunkName: "monordo" */ "./Projects/Google.vue");
+  import(/* webpackChunkName: "google" */ "./Projects/Google.vue");
   const Sepefrei = () =>
-  import(/* webpackChunkName: "monordo" */ "./Projects/Sepefrei.vue");
+  import(/* webpackChunkName: "sepefrei" */ "./Projects/Sepefrei.vue");
 export default {
   name: "Project",
   components: {
@@ -133,7 +133,7 @@ export default {
     cicdportfolio,
     Women,
     Vivatech,
-    Handimanagement,
+    Efrei,
     Ownest,
     Google,
     Sepefrei

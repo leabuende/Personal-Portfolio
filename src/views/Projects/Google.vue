@@ -1,60 +1,53 @@
 <template>
-    <div class="ladies project-component">
-      <div class="fullsection">
-        <p>
-          When I started off my journey to becomming a programmer, I got really
-          intimidated by my classmates I was looking up to. However, I never
-          pictured myself as a developer because I didn't have any role models
-          that I could really relate to.
-        </p>
-        <br />
-        <p>
-          Then, I found <strong>Ladies of Code</strong>. A community of passionate
-          and talented women in STEM, devoted to inspiring students like myself to
-          persue carreers in Computer Engineering.
-        </p>
-        <br />
-      </div>
-      <div class="full-section half-section-media">
-        <img src="@/assets/projects/google/album/1.png" alt="" />
-      </div>
-      <div class="half-section half-section-media ">
-        <img src="@/assets/projects/google/album/2.png" alt="" />
-      </div>
-      <div class="half-section half-section-media">
-        <img src="@/assets/projects/google/album/3.png" alt="" />
-      </div>
-      <div class="half-section">
-        <p>
-          The most scary part of it all : creating original developer memes, while
-          just starting of my developer learning journey myself !
-        </p>
-        <p>
-          However I found that the intensive hours of developer memes on Reddit
-          taught me more than some courses of my
-          <router-link to="/about" class="links animated-links">
-            Computer Engineering degree
-          </router-link>
-          did...
-        </p>
-      </div>
-  
-      <div class="lesson-box">
-        <h2>What did I learn ?</h2>
-        <br />
-        <p>
-          Making <strong>memes</strong> on relateable subjects for developers
-          taught me how to stay up to date on relevant tech subjects, and also how
-          to engage in a team of developers. (Feel free to send me developer memes
-          on <a href="" class="links animated-links">Twitter</a>)
-        </p>
-      </div>
+  <div class="ladies project-component">
+    <div class="fullsection">
+      <p>
+        Collaborating in a team of 6, we had 3 days to come up with an innovative solution using the Cloud to fight
+        climate change.
+
+      </p>
+      <br />
+      <p>
+        We spend 2 days getting coached at the Parisian google headquarters by Thales and Google consultants. We came up
+        with Greenmile, a mobile app to track your daily carbon footprint using data already available to us using
+        google’s collected data, and complementary manually inputs.
+
+      </p>
+      <br />
     </div>
-  </template>
+    <div class="half-section half-section-media ">
+      <img src="@/assets/projects/google/album/2.png" alt="" />
+    </div>
+    <div class="half-section half-section-media">
+      <img src="@/assets/projects/google/album/3.png" alt="" />
+    </div>
+    <p>
+      I then got to pitch our project to more than 300 people, and partake in the annual Google night !
+    </p>
+
+
+    <div class="full-section half-section-media">
+      <img src="@/assets/projects/google/album/1.png" alt="" />
+    </div>
+
+
+
+    <div class="lesson-box">
+      <h2>What did I learn ?</h2>
+      <br />
+      <p>
+        I learnt how to quickly come up with an innovative idea as a group, but also about the different innovative
+        applications for the Cloud. I would 100% recommend hackathons (And the Google night of course)!
+      </p>
+    </div>
+  </div>
+</template>
   
-  <script>
-  export default {
-    name: "Google",
-  };
-  </script>
-  <style scoped></style>
+<script>
+export default {
+  name: "Google",
+};
+</script>
+<style scoped>
+
+</style>
