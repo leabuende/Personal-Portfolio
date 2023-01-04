@@ -16,7 +16,6 @@ passionate about creating beautiful things. ❤️
     </a>
     <a href="mailto:lea.buende@gmail.com?subject=Let's keep in touch ! - Léa Buendé" target="_blank">
     <img src="../assets/links/mail.png" alt="">
-
     </a>
 
 </div>
@@ -49,6 +48,8 @@ p{
 }
 .social-links{
     margin-top:20px;
+    display: flex;
+    align-items: center;
 }
 .social-links img{
     height:25px;

@@ -3,7 +3,7 @@
     <div class="presentation-section">
       <div class="presentation-left">
         <Presentation />
-        <a href="https://drive.google.com/file/d/1NsO7pEXPJZxEyiOfPLi5W5VlsrXdr7Y9/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1aiNEgE9TGvUM_9B8Av49o8LV8VX4kz6D/view?usp=sharing" target="_blank">
         <button class="white-button">
           Download my resume
         </button>
