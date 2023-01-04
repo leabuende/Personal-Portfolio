@@ -9,7 +9,8 @@
         pipeline for my portfolio website.
       </p>
       <br />
-      <strong><a href="https://drive.google.com/file/d/1U0KWmlyk7ngDKN223S8-fppXYBKk6LP2/view?usp=sharing">Link to my
+      <strong><a class="links animated-links" href="https://drive.google.com/file/d/1U0KWmlyk7ngDKN223S8-fppXYBKk6LP2/view?usp=sharing"
+          target="_blank">Link to my
           report</a></strong>
       <br />
     </div>
