@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 import router from "./router";
 import VueCarousel from "vue-carousel";
 import axios from "axios";
+//test 
 
 Vue.use(VueCarousel);
 Vue.use(VueRouter);
