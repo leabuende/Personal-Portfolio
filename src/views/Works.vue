@@ -8,10 +8,10 @@
         Code
       </h2>
       <h2 class="category-filter" @click="filterProjects('extra')">
-        Extra
+        & More ❤️
       </h2>
       <h2 class="category-filter" @click="filterProjects('all')">
-        All
+        See all
       </h2>
     </div>
     <div class="container">
