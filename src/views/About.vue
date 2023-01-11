@@ -23,6 +23,12 @@
                 /></a>
               </div>
             </div>
+            <br>
+            <ul>
+              <li>Problem solving</li>
+              <li>Agile team & project management</li>
+              <li>Continuous learning</li>
+            </ul>  
           </div>
           <div class="column">
             <h2 class="category-title">Tools</h2>
@@ -31,6 +37,16 @@
                 <a :href="tool.link">
                   <img
                     :src="require(`@/assets/tech-icons/${tool.img}.png`)"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <h2 class="category-title currently">Currently learning</h2>
+            <div class="icons">
+              <div class="icon" v-for="learning in newskills" :key="learning.name">
+                <a :href="learning.link">
+                  <img
+                    :src="require(`@/assets/tech-icons/${learning.img}.png`)"
                     alt=""
                 /></a>
               </div>
@@ -50,6 +66,9 @@
             <p class="category-text">
               Self-taught designer
             </p>
+            <p class="category-text">
+              Strategy & Leadership Certification @ University of Ilinois
+            </p>
           </div>
         </div>
 
@@ -57,7 +76,7 @@
           <div class="alt-column">
             <h2 class="category-title">I'm passionate about...</h2>
             <div class="icons">
-              <div class="icon" v-for="passion in passions" :key="passion.name">
+              <div class="icon-passions" v-for="passion in passions" :key="passion.name">
                 <a :href="passion.link">
                   <img
                     :src="require(`@/assets/passions-icons/${passion.img}.png`)"
@@ -69,7 +88,7 @@
           <div class="alt-column">
             <h2 class="category-title">And inspired by...</h2>
             <div class="icons">
-              <div class="icon" v-for="inspiration in inspirations" :key="inspiration.name">
+              <div class="icon-passions" v-for="inspiration in inspirations" :key="inspiration.name">
                 <a :href="inspiration.link">
                   <img
                     :src="require(`@/assets/passions-icons/${inspiration.img}.png`)"
@@ -110,6 +129,16 @@
                 /></a>
               </div>
             </div>
+            <h2 class="category-title currently">Currently learning</h2>
+            <div class="icons">
+              <div class="icon" v-for="learning in newskills" :key="learning.name">
+                <a :href="learning.link">
+                  <img
+                    :src="require(`@/assets/tech-icons/${learning.img}.png`)"
+                    alt=""
+                /></a>
+              </div>
+            </div>
           </div>
           <div class="column">
             <h2 class="category-title">Languages</h2>
@@ -125,6 +154,9 @@
             <p class="category-text">
               Self-taught designer
             </p>
+            <p class="category-text">
+              Strategy & Leadership Certification @ University of Ilinois
+            </p>
           </div>
         </div>
       </div>
@@ -133,7 +165,7 @@
           <div class="alt-column">
             <h2 class="category-title">I'm passionate about...</h2>
             <div class="icons">
-              <div class="icon" v-for="passion in passions" :key="passion.name">
+              <div class="icon-passions" v-for="passion in passions" :key="passion.name">
                   <img
                     :src="require(`@/assets/passions-icons/${passion.img}.png`)"
                     alt=""
@@ -144,7 +176,7 @@
           <div class="alt-column">
             <h2 class="category-title">And inspired by...</h2>
             <div class="icons">
-              <div class="icon inspired" v-for="inspiration in inspirations" :key="inspiration.name">
+              <div class="icon-passions inspired" v-for="inspiration in inspirations" :key="inspiration.name">
                 <a :href="inspiration.link" target="_blank">
                   <img
                     :src="require(`@/assets/passions-icons/${inspiration.img}.png`)"
@@ -185,19 +217,49 @@ export default {
           link: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
         },
         {
+          name: "Typescript",
+          img: "ts",
+          link: "https://www.typescriptlang.org/",
+        },
+        {
           name: "Node.js",
           img: "node",
           link: "https://nodejs.org/en/",
         },
         {
-          name: "Figma",
-          img: "figma",
-          link: "https://www.figma.com/community",
+          name: "Express",
+          img: "express",
+          link: "https://expressjs.com/fr/",
+        },
+        {
+          name: "React",
+          img: "react",
+          link: "https://fr.reactjs.org/",
+        },
+        {
+          name: "Angular",
+          img: "angular",
+          link: "https://angular.io/",
+        },
+        {
+          name: "Sass",
+          img: "sass",
+          link: "https://sass-lang.com/",
+        },
+        {
+          name: "Cypress",
+          img: "cypress",
+          link: "https://www.cypress.io/",
         },
         {
           name: "Wordpress",
           img: "wordpress",
           link: "https://fr.wordpress.org/",
+        },
+        {
+          name: "Webflow",
+          img: "webflow",
+          link: "https://webflow.com/",
         },
       ],
       tools: [
@@ -221,6 +283,53 @@ export default {
           img: "github",
           link: "https://github.com/",
         },
+        {
+          name: "Figma",
+          img: "figma",
+          link: "https://www.figma.com/community",
+        },
+        {
+          name: "Canva",
+          img: "canva",
+          link: "https://www.canva.com/",
+        },
+        {
+          name: "Storybook",
+          img: "storybook",
+          link: "https://storybook.js.org/"
+        },
+      ],
+      newskills: [
+        {
+          name: "React Native",
+          img: "reactnative",
+          link: "https://reactnative.dev/",
+        },
+        {
+          name: "Three.js",
+          img: "threejs",
+          link: "https://threejs.org/",
+        },
+        {
+          name: "Nuxt",
+          img: "nuxt",
+          link: "https://nuxtjs.org/",
+        },
+        {
+          name: "Firebase",
+          img: "firebase",
+          link: "https://firebase.google.com/",
+        },
+        {
+          name: "Solidity",
+          img: "solidity",
+          link: "https://www.figma.com/community",
+        },
+        {
+          name: "Flutter",
+          img: "flutter",
+          link: "https://flutter.dev/",
+        }
       ],
       inspirations: [
         {
@@ -233,28 +342,48 @@ export default {
           img: "michelle",
           link: "https://fr.wikipedia.org/wiki/Michelle_Obama",
         },
+        {
+          name: "Salman Rushdie",
+          img: "salman",
+          link: "https://fr.wikipedia.org/wiki/Salman_Rushdie",
+        },
+        {
+          name: "Sarah dayan",
+          img: "sarah",
+          link: "https://www.sarahdayan.dev/",
+        },
       ],
       passions: [
         {
           name: "Animal Crossing",
           img: "ac",
-          link: "www.slack.com",
-        },
-        {
-          name: "Overwatch",
-          img: "overwatch",
-          link: "www.notion.org",
+          link: "https://www.animal-crossing.com/new-horizons/fr/",
         },
         {
           name: "Ladies of Code",
           img: "ladies",
-          link: "www.vuejs.org",
+          link: "https://ladiesofcodeparis.netlify.app/",
         },
         {
-          name: "Netflix",
-          img: "netflix",
-          link: "www.vuejs.org",
+          name: "Ballet",
+          img: "ballet",
+          link: "https://fr.wikipedia.org/wiki/Ballet",
         },
+        {
+          name: "Reading",
+          img: "books",
+          link: "",
+        },
+        {
+          name: "Gym",
+          img: "gym",
+          link: "https://www.fitnesspark.fr/",
+        },
+        {
+          name: "Dogs",
+          img: "dog",
+          link: "https://fr.wikipedia.org/wiki/Dogs_(groupe)",
+        }
        
       ],
       album:[
@@ -335,10 +464,22 @@ export default {
 }
 .icon {
   margin-right: 10px;
+  margin-bottom: 10px;
+  height: 30px;
 }
-.inspired img{
-    height:55px;
-
+.icon-passions img{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 60px;
+}
+.icon img {
+  height: 30px;
+}
+.currently {
+  margin-top: 20px;
+}
+.category-text{
+  margin-bottom: 10px;
 }
 .button{
   position:absolute;
